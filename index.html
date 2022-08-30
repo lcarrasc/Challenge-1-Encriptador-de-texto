@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/reset.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
+   
+
+    <title>Encriptador/Desencriptador de texto</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">
+            <img src="images/Logo.png" alt="Logo Letra A de Alura">
+        </h1>
+    </header>
+    
+    <main>
+       
+        <section class="area-ingreso-datos">
+
+            <div class="ingreso-texto">
+                <textarea id="texto-descrifrado" placeholder="Ingresa el texto aquí." rows="10"></textarea>
+            </div>       
+            
+            <div class="aviso-texto">
+                <img  src="images/exclamacion.png" alt="simbolo de exclamacion">
+                Solo letras minusculas y sin acentos
+            </div>
+                        
+            <div class="botones">
+                <button class="boton-encriptar" onclick="cifrarTexto()">Ecriptar</button>
+                <button class="boton-desencriptar" onclick="descifrarTexto()">Desencriptar</button>
+            </div>
+                    
+        </section>
+
+        <section class="area-resultado-datos">
+                  
+            <textarea id="texto-crifrado" class="no-visible" placeholder="Ingresa el texto que desees encriptar o desencriptar." ></textarea>
+
+            <img id="muneco" class="muneco visible" src="images/imagen.png" alt="imagen de una persona con una lupa">
+                        
+            <div id="grupo-textos-no-encontrado" class="grupo-textos-no-encontrado visible">
+                
+                <p class="texto-no-encontrado visible">Ningún mensaje fue encontrado</p>
+            
+                <p id="ingrese" class="texto-ingrese visible">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        
+            </div>
+            
+            <button id="boton-copiar" class="boton-copiar no-visible" onclick="copiarTexto()">Copiar</button>
+                          
+        </section>
+
+        <script src="js/encripter-desencripter.js"></script>
+
+    </main>
+        
+    <footer>
+        <p class="copyright">Desarrollado por Luis Carrasco - Github: <a href="https://github.com/lcarrasc">https://github.com/lcarrasc</a></p>
+    </footer>
+    
+</body>
+</html>
